@@ -65,12 +65,11 @@ public class AddCountMonitoringDecoratorTest {
     for (int bottle = 0; bottle < 500; bottle += 1) {
       for (int pill = 0; pill < 200; pill += 2) {
         counter.addPill(2);
+      }
       assertEquals(200, counter.getPillCount());
       counter.reset();
     }
     return true;
-  }
-    return false;
   }
 }
 
